@@ -13,7 +13,7 @@
 
 .head .navBar .divLogo {
     position: fixed;
-    background-color: rgba(40, 40, 157, 0.809);
+    background-color: #0d60b8;
     color: white;
     display: flex;
     justify-content: space-between;
