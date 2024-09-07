@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.head .navBar .divLogo a{
+.head .navBar .divLogo a {
     text-decoration: none;
 }
 
@@ -36,7 +36,11 @@
     position: relative;
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDiv ul{
+.head .navBar .divLogo .options .firstUl .names #navNames {
+    color: white;
+}
+
+.head .navBar .divLogo .options .firstUl .names .dropDiv ul {
     list-style-type: none;
 }
 
@@ -58,22 +62,25 @@
     position: absolute;
     background-color: white;
     color: black;
-    width: 1200%;
+    width: 1400%;
     top: 100%;
     left: 0;
     z-index: 1000;
     padding: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
 }
 
 .head .navBar .divLogo .options .firstUl .names:hover .dropDivMain {
     display: block;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 36% 35% 32%;
+    border: 1px solid black;
 }
 
 .head .navBar .divLogo .options .firstUl .names:hover .dropDiv {
     display: block;
+    border-radius: 2rem;
 }
 
 .head .navBar .divLogo .log {
@@ -84,18 +91,10 @@
 .head .navBar .divLogo .log a {
     color: white;
     text-decoration: none;
-    padding: 0.4rem 1rem;
-    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
 }
 
 .head .navBar .divLogo .log .logSales {
     background-color: #444;
-}
-
-.head .navBar .divLogo .log .logStart {
-    background-color: #007bff;
-}
-
-.head .navBar .divLogo .log .logLogin {
-    background-color: #28a745;
 }
