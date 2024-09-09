@@ -29,14 +29,14 @@
 .head .navBar .divLogo .options .firstUl {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.8rem;
 }
 
 .head .navBar .divLogo .options .firstUl .names {
     position: relative;
 }
 
-.head .navBar .divLogo .options .firstUl .names #navNames {
+.head .navBar .divLogo .options .firstUl .names a {
     color: white;
 }
 
@@ -44,7 +44,8 @@
     list-style-type: none;
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDiv {
+.head .navBar .divLogo .options .firstUl .names .dropDiv ,
+.head .navBar .divLogo .options .firstUl .names .dropDivMain {
     display: none;
     position: absolute;
     background-color: white;
@@ -55,32 +56,28 @@
     z-index: 1000;
     padding: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.head .navBar .divLogo .options .firstUl .names .dropDivMain {
-    display: none;
-    position: absolute;
-    background-color: white;
-    color: black;
-    width: 1400%;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    padding: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
 }
-
-.head .navBar .divLogo .options .firstUl .names:hover .dropDivMain {
-    display: block;
-    display: grid;
-    grid-template-columns: 36% 35% 32%;
-    border: 1px solid black;
+.head .navBar .divLogo .options .firstUl .names .dropDivMain {
+    width: 1200%;
 }
 
-.head .navBar .divLogo .options .firstUl .names:hover .dropDiv {
+/* When the show class is added, display the dropdown */
+.head .navBar .divLogo .options .firstUl .names .dropDiv.show ,
+.head .navBar .divLogo .options .firstUl .names .dropDivMain.show {
     display: block;
-    border-radius: 2rem;
+}
+
+.head .navBar .divLogo .options .firstUl .names .dropDivMain.show {
+    margin-top: 30%;
+    display: grid;
+    grid-template-columns: 36% 32% 30%;
+    /* fix the product dropdown */
+}
+
+.head .navBar .divLogo .options .firstUl .names .dropDivMain a,
+.head .navBar .divLogo .options .firstUl .names .dropDiv a {
+    color: blue;
 }
 
 .head .navBar .divLogo .log {
