@@ -1,8 +1,6 @@
 function myFunction() {
     var dropdown = document.getElementById("dropDivMain");
     dropdown.classList.toggle("show");
-    // var elementToRotate = document.getElementById("rotation");
-    // elementToRotate.classList.toggle("rotated90");
     var dropdown1 = document.getElementById("dropDiv");
     dropdown1.classList.toggle("show");
 }
