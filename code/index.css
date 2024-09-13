@@ -40,12 +40,12 @@
     color: white;
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDiv ul {
+.head .navBar .divLogo .options .firstUl .names .bulk1 .dropDiv ul {
     list-style-type: none;
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDiv ,
-.head .navBar .divLogo .options .firstUl .names .dropDivMain {
+.head .navBar .divLogo .options .firstUl .names .bulk1 .dropDiv,
+.head .navBar .divLogo .options .firstUl .names .bulk .dropDivMain {
     display: none;
     position: absolute;
     background-color: white;
@@ -58,25 +58,28 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
 }
-.head .navBar .divLogo .options .firstUl .names .dropDivMain {
+
+.head .navBar .divLogo .options .firstUl .names .bulk .dropDivMain {
     width: 1200%;
 }
 
-/* When the show class is added, display the dropdown */
-.head .navBar .divLogo .options .firstUl .names .dropDiv.show ,
-.head .navBar .divLogo .options .firstUl .names .dropDivMain.show {
+.head .navBar .divLogo .options .firstUl .names .bulk1 .dropDiv.show,
+.head .navBar .divLogo .options .firstUl .names .bulk .dropDivMain.show {
     display: block;
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDivMain.show {
+.head .navBar .divLogo .options .firstUl .names .bulk1 .dropDiv.show{
+    margin-top: 21%;
+}
+
+.head .navBar .divLogo .options .firstUl .names .bulk .dropDivMain.show {
     margin-top: 30%;
     display: grid;
     grid-template-columns: 36% 32% 30%;
-    /* fix the product dropdown */
 }
 
-.head .navBar .divLogo .options .firstUl .names .dropDivMain a,
-.head .navBar .divLogo .options .firstUl .names .dropDiv a {
+.head .navBar .divLogo .options .firstUl .names .bulk .dropDivMain a,
+.head .navBar .divLogo .options .firstUl .names .bulk1 .dropDiv a {
     color: blue;
 }
 
@@ -94,4 +97,9 @@
 
 .head .navBar .divLogo .log .logSales {
     background-color: #444;
+}
+
+#rotation, #rotation1 {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth rotation */
 }
